@@ -1,0 +1,82 @@
+[
+    {
+        "name" : "call" ,
+        "src" : "/imgs/call.png"
+    },
+    {
+        "name" : "clock" ,
+        "src" : "/imgs/clock.png"
+    },
+    {
+        "name" : "cloud" ,
+        "src" : "/imgs/cloud.png"
+    },
+    {
+        "name" : "discord" ,
+        "src" : "/imgs/discord.png"
+    },
+    {
+        "name" : "facebook" ,
+        "src" : "/imgs/facebook.png"
+    },
+    {
+        "name" : "gmail" ,
+        "src" : "/imgs/gmail.png"
+    },
+    {
+        "name" : "home" ,
+        "src" : "/imgs/home.png"
+    },
+    {
+        "name" : "instgram" ,
+        "src" : "/imgs/instgram.png"
+    },
+    {
+        "name" : "internet" ,
+        "src" : "/imgs/internet.png"
+    },
+    {
+        "name" : "laptob" ,
+        "src" : "/imgs/laptob.png"
+    },
+    {
+        "name" : "location" ,
+        "src" : "/imgs/location.png"
+    },
+    {
+        "name" : "lock" ,
+        "src" : "/imgs/lock.png"
+    },
+    {
+        "name" : "mail" ,
+        "src" : "/imgs/mail.png"
+    },
+    {
+        "name" : "profile" ,
+        "src" : "/imgs/profile.png"
+    },
+    {
+        "name" : "settings" ,
+        "src" : "/imgs/settings.png"
+    },
+    {
+        "name" : "telgram" ,
+        "src" : "/imgs/telgram.png"
+    },
+    {
+        "name" : "tiktok" ,
+        "src" : "/imgs/tiktok.png"
+    },
+    {
+        "name" : "twitter" ,
+        "src" : "/imgs/twitter.png"
+    },
+    {
+        "name" : "whatsapp" ,
+        "src" : "/imgs/whatsapp.png"
+    },
+    {
+        "name" : "youtube" ,
+        "src" : "/imgs/youtube.png"
+    }
+]

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="icon" href="./imgs/logo/logo.png" />
+    <meta name="description" content="Memory Game" />
+    <link rel="stylesheet" href="javascipt.css" />
+  </head>
+  <body>
+    <!-- memory game assignment -->
+    <div class="control-buttons">
+      <div class="score-msg"></div>
+      <div class="control-cont">
+        <div class="input-cont">
+          <div class="min-cont">
+            <label for="min" class="labelMin"> min: </label>
+            <input type="number" value="0" min="0" class="time min" id="min" />
+          </div>
+          <div class="sec-cont">
+            <label for="sec" class="labelSec"> sec: </label>
+            <input
+              type="number"
+              value="1"
+              min="0"
+              max="59"
+              class="time sec"
+              id="sec"
+            />
+          </div>
+          <div class="blocks-cont">
+            <label for="number-blocks-pick" class="labelBlocks">
+              number of blocks:
+            </label>
+            <input
+              id="number-blocks-pick"
+              type="number"
+              min="5"
+              max="20"
+              placeholder="number between 5 - 20"
+              class="nums"
+              value="5"
+            />
+          </div>
+        </div>
+        <span>Start Game</span>
+      </div>
+    </div>
+    <div class="container">
+      <header class="info-container">
+        <div class="name">Hello: <span></span></div>
+        <div class="timer">Time left = <span id="timer"></span></div>
+        <div class="tries">Wrong Tries: <span>0</span></div>
+      </header>
+      <article class="memory-game-blocks">
+        <div class="game-block" data-technology="cloud">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/cloud.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="cloud">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/cloud.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="discord">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/discord.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="discord">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/discord.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="facebook">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/facebook.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="facebook">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/facebook.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="gmail">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/gmail.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="gmail">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/gmail.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="home">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/home.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="home">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/home.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="instgram">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/instgram.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="instgram">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/instgram.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="internet">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/internet.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="internet">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/internet.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="tiktok">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/tiktok.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="tiktok">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/tiktok.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="whatsapp">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/whatsapp.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="whatsapp">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/whatsapp.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="youtube">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/youtube.png" alt="" />
+          </div>
+        </div>
+        <div class="game-block" data-technology="youtube">
+          <div class="face front"></div>
+          <div class="face back">
+            <img decoding="async" src="imgs/youtube.png" alt="" />
+          </div>
+        </div>
+      </article>
+      <footer class="Last-container">
+        <div class="recivedName">Name: <span></span></div>
+        <div class="Last Score">Last Wrong Tries: <span>0</span></div>
+      </footer>
+    </div>
+    <audio id="success" src="./imgs/success.wav"></audio>
+    <audio id="fail" src="./imgs/fail.mp3"></audio>
+    <audio id="losingGame" src="./imgs/losingGame.mp3"></audio>
+    <audio id="gameSound" src="./imgs/gameSound.mp3"></audio>
+    <script src="javascript.js" type="module"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

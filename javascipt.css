@@ -1,0 +1,233 @@
+/* memory game css */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Tahoma, sans-serif;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+input {
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.control-buttons {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(3, 169, 244, 0.9);
+}
+
+.control-buttons .score-msg {
+  background-color: #f44336;
+  width: 100%;
+  padding: 30px 10px;
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+  margin: 20px 0px;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .control-buttons .score-msg {
+    font-size: 30px;
+  }
+}
+
+.control-buttons .control-cont {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #132b3d;
+  padding: 30px;
+  border-radius: 4px;
+  color: white;
+}
+
+.control-buttons .input-cont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.control-buttons .min-cont,
+.control-buttons .sec-cont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.control-buttons .blocks-cont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.control-buttons .labelMin,
+.control-buttons .labelBlocks,
+.control-buttons .labelSec {
+  font-size: 25px;
+  font-weight: 700;
+}
+.control-buttons .time.min {
+  flex: 1;
+}
+
+.control-buttons .time.sec {
+  flex: 1;
+}
+
+.control-buttons .nums {
+  width: 100%;
+}
+
+.control-buttons span {
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .control-buttons span {
+    font-size: 25px;
+  }
+}
+
+.info-container {
+  margin: 20px auto 0;
+  background-color: #f6f6f6;
+  padding: 10px 30px;
+  font-size: 20px;
+  overflow: hidden;
+  border: 5px solid #2196f3;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+@media (max-width: 767px) {
+  .info-container {
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    padding: 10px 5px;
+  }
+}
+.memory-game-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px auto;
+}
+.memory-game-blocks.no-clicking {
+  pointer-events: none;
+}
+.memory-game-blocks .game-block {
+  height: 100px;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  flex: 1 0 100px;
+  margin: 0 5px 10px;
+}
+.memory-game-blocks .game-block .front {
+  background-color: #333;
+  line-height: 100px;
+}
+.memory-game-blocks .game-block .front:before {
+  content: "!?";
+  color: #fff;
+  font-size: 80px;
+  font-weight: bold;
+}
+.memory-game-blocks .game-block .back {
+  background-color: #607d8b;
+  transform: rotateY(180deg);
+}
+.memory-game-blocks .game-block .back img {
+  width: 80px;
+  height: 80px;
+  margin-top: 5px;
+}
+.memory-game-blocks .game-block .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+  border: 5px solid #2196f3;
+  border-radius: 4px;
+}
+.memory-game-blocks .game-block.is-flipped,
+.memory-game-blocks .game-block.has-match {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+.Last-container {
+  margin: -10px auto 20px;
+  background-color: #f6f6f6;
+  padding: 10px 30px;
+  font-size: 20px;
+  border: 5px solid #2196f3;
+  border-radius: 4px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 767px) {
+  .Last-container {
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 5px;
+  }
+}
